@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="MainContent">
+    <div class="headerImage">
+        <img src="https://www.johannite.org/site/wp-content/uploads/2017/02/learning.png">
+    </div>
+
+    <div class="text-left">
+        <ul class="links">
+        @foreach (var l in Model.Links)
+        { 
+            @if (l.Active)
+            {
+                <li><a class="btn btn-primary" href="@l.Href" role="button">@l.displayName</a></li>
+            }   
+
+        }
+        </ul>
+    </div>
+</div>
