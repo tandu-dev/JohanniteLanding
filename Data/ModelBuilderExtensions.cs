@@ -10,7 +10,7 @@ namespace JohanniteLanding.Data
             modelBuilder.Entity<Link>().HasData(
                 new Link {
                     LinkId = 1,
-                    Href = "https://office.johannite.tech",
+                    Href = "https://officedev.johannite.tech",
                     displayName = "Divine Office of the Apostolic Johannite Church",
                     Active = true
 
